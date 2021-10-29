@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+html {
+  font-family: "Rubik", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* height: 100vh; */
+  /* font-size: 62.5%; */
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+.app {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+main {
+  height: 908px;
+  background: url("img/image.png") no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+.main-header {
+  position: absolute;
+  top: 192px;
+  left: 674px;
+  width: 518px;
+  height: 124px;
+}
+.main-header h1 {
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 3.5px;
+  font-size: 50px;
+  line-height: 64px;
+  color: #fdd000;
+  margin: 0;
+}
+.main-paragraph {
+  position: absolute;
+  top: 360px;
+  left: 638px;
+  width: 554px;
+  height: 144px;
+}
+.main-paragraph p {
+  margin: 0;
+  color: rgb(197, 196, 196);
+  font-size: 30px;
+  font-weight: 300;
+  text-align: right;
+  letter-spacing: 0.6px;
+  line-height: 40px;
+}

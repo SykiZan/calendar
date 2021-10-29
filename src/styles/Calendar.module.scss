@@ -1,0 +1,83 @@
+.calendar-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 695px;
+  height: 908px;
+  background-color: #272829;
+}
+
+.calendar {
+  height: 481px;
+  width: 485px;
+  font-size: 1rem;
+  color: #dfdfdf;
+}
+.calendar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 485px;
+  font-size: 19px;
+  margin-bottom: 1rem;
+  margin-left: 17px;
+}
+.line {
+  height: 1px;
+  width: 479px;
+  margin-left: 17px;
+  background-color: gray;
+}
+.days {
+  // width: 40%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 22px;
+  row-gap: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 17px;
+}
+.today {
+  background: #fdd000;
+
+  color: black;
+}
+.day-inactive {
+  color: grey;
+}
+
+.week-days {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 468px;
+
+  margin: 18px 17px 18px 18px;
+}
+.btn {
+  display: flex;
+  padding: 0;
+  background: none;
+  border: none;
+}
+.btn-prev {
+  justify-content: flex-start;
+}
+.btn-next {
+  justify-content: flex-end;
+}
+.btn-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: #3b494a2b;
+  stroke: #bbb6b6;
+}
