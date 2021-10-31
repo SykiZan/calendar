@@ -3,12 +3,26 @@
   height: 140px;
   background-color: white;
   position: relative;
+  z-index: 20;
+}
+
+@media (max-width: 800px) {
+  .pop-up {
+    width: 90%;
+    height: 40%;
+  }
 }
 
 .info {
   display: flex;
   margin: 25px;
   gap: 25px;
+}
+
+@media (max-width: 800px) {
+  .info {
+    flex-direction: column;
+  }
 }
 
 .info-block {

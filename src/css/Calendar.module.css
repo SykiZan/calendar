@@ -8,11 +8,26 @@
   background-color: #272829;
 }
 
+@media (max-width: 800px) {
+  .calendar-zone {
+    width: 100%;
+    height: 85%;
+    background-color: rgba(39, 40, 41, 0.9);
+  }
+}
+
 .calendar {
   height: 481px;
   width: 485px;
   font-size: 1rem;
   color: #dfdfdf;
+}
+
+@media (max-width: 800px) {
+  .calendar {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 .calendar-nav {
@@ -25,11 +40,26 @@
   margin-left: 17px;
 }
 
+@media (max-width: 800px) {
+  .calendar-nav {
+    width: 80%;
+    margin: 5px auto;
+    font-size: 16px;
+  }
+}
+
 .line {
   height: 1px;
   width: 479px;
   margin-left: 17px;
   background-color: gray;
+}
+
+@media (max-width: 800px) {
+  .line {
+    width: 90%;
+    margin: 5px auto;
+  }
 }
 
 .days {
@@ -41,16 +71,51 @@
   margin-bottom: 50px;
 }
 
+@media (max-width: 800px) {
+  .days {
+    column-gap: 5px;
+    row-gap: 9px;
+    margin: 9px;
+  }
+}
+
 .day {
   display: flex;
+  position: relative;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 17px;
 }
 
+.day:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .day {
+    padding: 8px;
+  }
+}
+
 .today {
   background: #fdd000;
   color: black;
+}
+
+.day-highlighted {
+  color: #fdd000;
+}
+
+.day-highlighted:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #fdd000;
 }
 
 .day-inactive {
@@ -65,11 +130,21 @@
   margin: 18px 17px 18px 18px;
 }
 
+@media (max-width: 800px) {
+  .week-days {
+    justify-content: space-between;
+    width: 90%;
+    margin: 5px auto;
+    font-size: 16px;
+  }
+}
+
 .btn {
   display: flex;
   padding: 0;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .btn-prev {
